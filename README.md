@@ -3,6 +3,7 @@ To use camisim with the genomes we downloaded from KEGG, it is important to know
 
 Directory structure of the genomes:
 
+```
 genomes_extracted_from_kegg
 |
 |----| genome_name1
@@ -15,6 +16,7 @@ genomes_extracted_from_kegg
 .
 .
 .
+```
 
 ## Step 1
 The python file will
