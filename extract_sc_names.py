@@ -13,5 +13,5 @@ if __name__ == '__main__':
                 first_line = g.readline()
                 first_line = first_line.strip()
             sc_name = ' '.join(first_line.split(' ')[2:4])
-            print(sc_name)
+            print(sc_name + ' extracted from ' + directory_name)
             f.write(sc_name + '\n')
