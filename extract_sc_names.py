@@ -10,5 +10,5 @@ if __name__ == '__main__':
             with open(genome_file_name, 'r') as g:
                 first_line = g.readline()
                 first_line = first_line.strip()
-                print(first_line)
+                print(first_line.split(' '))
             f.write(first_line+'\n')
