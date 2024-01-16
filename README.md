@@ -35,4 +35,4 @@ cat names.txt | taxonkit name2taxid
 1. taxonkit is installed here on the GPU machine: `/home/grads/mbr5797/taxonkit`
 
 # TODO
-There are still some genome names that do not have a tax id associated with them. We need to figure out what to do with these.
+There are still some genome names that do not have a tax id associated with them. These names are in the file `genome_names_to_exclude`. What we need to do is: we must not use these in the simulations. Simple!!
