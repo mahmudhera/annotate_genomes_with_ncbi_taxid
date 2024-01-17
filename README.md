@@ -58,11 +58,10 @@ This is easy. Also a tab separated file. There are two fields:
 ## Summary
 1. run `extract_sc_names.py`. This will generate `scientific_names.txt`, which is a list of all scientific names of all organisms that we have in the KEGG database. Do not forget to set the path -- they are hardcoded. This will also generate the file `scientific_name_to_genome_name.csv`. The explanation is self.
 1. run `cat scientific_names.txt | taxonkit name2taxid > list_of_taxids`. The output file will contain scientific name in column 1, and taxid in column 2.
-1. run `extract_names_with_no_taxid.py > genome_names_to_exclude`. This will generate a list of genome 3 digit names to not use.
 1. run `generate_genome_to_id.py`. This will generate a file named `genome_to_id.tsv` as explained above. This will take all genomes in our KEGG database list of genomes, skip the genomes that are to be excluded, and store the info of the rest (genomes for which, a valid taxid was obtained successfully).
 1. run `generate_metadata.tsv`. This will generate the metadata.tsv file, as explained above. This will also only use the genomes for which, a valid taxid is available, and skip the others.
 
-Important info to note:
+### Important info to note:
 1. scientific name to 3-digit name and vice versa: `scientific_name_to_genome_name.csv`
 1. scientific name to taxid: `list_of_taxids`
 1. 3-digit names to exclude: `genome_names_to_exclude`
